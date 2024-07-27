@@ -1,0 +1,26 @@
+﻿
+<h3>Chiled</h3>
+
+<div style="@Style @fontStyle">
+    <label>@NumberOfPage</label>
+    <label>@currentCount</label>
+    <h2>Parent</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni adipisci eaque autem fugiat! Quia, provident vitae! Magni tempora perferendis eum non provident.</p>
+
+</div>
+@code {
+    [CascadingParameter(Name = "Style")]
+    public string Style { get; set; }
+
+    [CascadingParameter(Name="fontStyle")]
+    public string fontStyle { get; set; } 
+
+    [CascadingParameter(Name="NumberOfPage")]
+
+    public int NumberOfPage { get; set; }
+
+
+    public int currentCount { get; set; }
+
+
+}
